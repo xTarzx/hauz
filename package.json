@@ -1,0 +1,25 @@
+{
+  "name": "hauz",
+  "version": "1.0.0",
+  "description": "wow",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "mon": "nodemon --ignore '*.json' index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xTarzx/hauz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xTarzx/hauz/issues"
+  },
+  "homepage": "https://github.com/xTarzx/hauz#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-ws": "^5.0.2",
+    "pug": "^3.0.3"
+  }
+}

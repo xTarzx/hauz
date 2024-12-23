@@ -1,0 +1,18 @@
+ul(id="appliances_ul" class="appliances_ul")
+    each appliance in appliances
+        li.appliances_li
+            div.appliance_div
+                input(type="hidden" name="id" value=appliance.id)
+                input(
+                    type="checkbox"
+                    name="status"
+                    checked=appliance.status 
+                    hx-post="/api/toggle" 
+                    hx-trigger="change"
+                    hx-include="closest li"
+                    value="true"
+                    hx-target="#appliances_ul"
+                    hx-swap="outerHTML"
+                )
+                p= appliance.name
+script=err_alert

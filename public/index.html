@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>hauz</title>
+        <script src="/js/htmx.min.js"></script>
+        <script src="/js/ws.js"></script>
+    </head>
+    <body>
+        <h1>hauz</h1>
+
+        <div
+            id="appliances"
+            hx-get="/api/appliances"
+            hx-trigger="load"
+            hx-ext="ws"
+            ws-connect="/ws/appliances"
+        >
+            <p>loading</p>
+        </div>
+    </body>
+</html>
